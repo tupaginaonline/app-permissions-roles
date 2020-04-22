@@ -70,9 +70,7 @@ app.get('/users', authUser, async(req:any,res:Response) => {
 	    return  res.json(getUsers(req.user, users));
 		
 	}catch(e){
-		
 		return res.status(500).send(e)
-		
 	}
 
 });
